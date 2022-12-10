@@ -4,9 +4,10 @@ export const addItemToCart = (cartItems, cartItemToAdd) => {
   );
 
   if (existingCartItem) {
+    console.log("yes they exist");
     return cartItems.map((cartItem) =>
       cartItem.id === cartItemToAdd.id
-        ? { ...cartItems, quantity: cartItem.quantity + 1 }
+        ? { ...cartItem, quantity: cartItem.quantity + 1 }
         : cartItem
     );
   }
