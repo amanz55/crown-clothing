@@ -11,6 +11,11 @@
     right: 40px;
     z-index: 5;
 
+    .empty-message{
+      font-size: medium;
+      margin: 50px auto;
+    }
+
     .cart-items {
       height: 240px;
       display: flex;
@@ -18,7 +23,8 @@
       overflow: scroll;
     }
 
-    button {
+    .custom-button {
       margin-top: auto;
+      font-size: small;
     }
   }
